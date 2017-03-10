@@ -170,15 +170,25 @@ h3 {
 	}
 	#hangman {
 		width: 80%;
+		height: 80%;
 	}
 	#sidebox input {
 		height: 25px;
 		width: 50px;
 	}
-	#sidebox {
+	#sidebox, #guessed {
+		width: 130px;
+		height: 550px;	
+	}
+	/*#header {
 		
 	}
-
+	#keybox input {
+		
+	}
+	#keybox {
+		
+	}*/
 }
 
 @media screen and (max-width: 700px) {
