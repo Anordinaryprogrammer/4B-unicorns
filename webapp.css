@@ -167,9 +167,16 @@ h3 {
 	#box {
 		width: 94%;
 	}
+	#header {
+		width: 95%;
+	}
 	#hangman {
-		width: 80%;
-		height: 80%;
+		width: 60%;
+		height: 47%;
+		margin: none;
+	}
+	#hangmanpng {
+		height: 200px;
 	}
 	#sidebox input {
 		height: 35px;
@@ -178,6 +185,16 @@ h3 {
 	#sidebox, #guessed {
 		width: 130px;
 		height: 550px;	
+		margin: none;
+	}
+	#keybox {
+		width: 60%;
+		height: 20%;
+		margin: none;
+	}
+	.button {
+		width: 6%;
+		height: 35%;
 	}
 }
 
@@ -191,8 +208,8 @@ h3 {
 		height: 700px;
 	}
 	#hangman {
-		width: 60%;
-		height: 60%;
+		width: 20%;
+		height: 30%;
 	}
 	#sidebox input {
 		height: 20px;
