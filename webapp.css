@@ -22,7 +22,6 @@ h3 {
 	width: 1150px;
 	position: relative;
 	top: 30px;
-	left: 15%;	
 }
 
 #header {
@@ -173,8 +172,8 @@ h3 {
 		height: 80%;
 	}
 	#sidebox input {
-		height: 25px;
-		width: 50px;
+		height: 35px;
+		width: 70px;
 	}
 	#sidebox, #guessed {
 		width: 130px;
