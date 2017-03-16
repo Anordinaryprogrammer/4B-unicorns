@@ -42,8 +42,11 @@ var blank = "";
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
 var imgCount = 1;
 var testEqual = "";
+var none = ["food", "sports", "animals", "countries"]
+var wins = 0;
+var losses = 0;
 
-var category = "food";
+var category = "none";
 
 function v(x) {
 	var test = x.toLowerCase();
@@ -72,6 +75,8 @@ function v(x) {
 		$("#hangmanpng").attr("src", "images/Hangman-" + imgCount + ".png");
 		if(imgCount == 11) {
 			alert("Game Over. \nThe correct word was " + randselect.toUpperCase() + ".");
+			losses++;
+			document.getElementById("scores").innerHTML = "Wins: " + wins + " | Losses: " + losses;
 			gen();
 		}
 		
@@ -92,6 +97,8 @@ function v(x) {
 	//alert(blank + "..." + testEqual + "...." + randselect);
 	if(testEqual == blank) {
 		alert("You win! \nThe correct word was " + randselect.toUpperCase() + ".");
+		wins++;
+		document.getElementById("scores").innerHTML = "Wins: " + wins + " | Losses: " + losses;
 		gen();
 	}
 }
@@ -102,6 +109,9 @@ function update(a) {
 function gen() {
 	blank = "";
 	testEqual = "";
+	if(category == "none") {
+		category = none[Math.floor(Math.random() * none.length)];
+	}
 	if(category == "food") {
 		randselect = food[Math.floor(Math.random() * food.length)];
 		document.getElementById("categoryName").innerHTML = "Category: food";
